@@ -70,7 +70,7 @@ export const TextNode = ({ data }) => {
   }, [text, variables, edges, onEdgesChange, nodeId]);
 
   return (
-    <BaseNode title="Text" inputs={variables.length > 0 ? variables : ["input"]} outputs={["output"]} className="w-80">
+    <BaseNode title="Text" inputs={variables} outputs={["output"]} className="w-80">
       <textarea
         ref={textareaRef}
         value={text}
